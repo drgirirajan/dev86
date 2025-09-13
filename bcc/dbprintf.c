@@ -10,6 +10,8 @@
 #define va_strt(p,i) va_start(p)
 #endif
 
+int vdbprintf(const char *fmt, va_list ap);
+
 #if defined(__STDC__) && !defined(__FIRST_ARG_IN_AX__)
 int dbprintf(const char * fmt, ...)
 #else
